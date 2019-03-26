@@ -116,3 +116,33 @@ if ($action == 'list_gigs') {
     header('Location: .?action=list_bands');      // display the Category List page
 }
 ?>
+
+<?php
+require_once('../model/database_1.php');
+?>
+
+
+<div class="dropdown" style="float: right">
+  
+  <div class="dropdown-content">
+    <a href="../reset-password.php" class="btn btn-warning">Reset Password</a>
+    <a href="../logout.php" class="btn btn-danger">Sign Out</a>
+  </div>
+</div>
+
+<div class="container">
+    <center><h2>Hottest Tickets!</h2></center>
+
+    <center><form name="toDoList">
+            <input type="text" name="ListItem"/>
+        </form>
+
+        <div id="button">Add</div>
+        <br/>
+        <ol></ol></center>
+
+</div>
+
+<?php
+include('../view/footer.php');
+?>

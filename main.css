@@ -265,5 +265,50 @@ form {
   textarea {
     resize: none;
   }
-  
-  
+ 
+  /********************************************************************
+*jQuery
+********************************************************************/
+
+.container{
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 40px;
+background: white;
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input{
+padding: 4px 15px 4px 5px;
+color: teal;
+}
+
+#button{
+display: inline-block;
+background-color:teal;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 4px 25px;
+}
+
+#button:hover{
+cursor: pointer;
+}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+ol li:nth-child(even){background: #dfdfdf;}
+
+.strike{text-decoration: line-through;}
+
+li:hover{
+  cursor: pointer;
+ }
