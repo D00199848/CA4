@@ -104,7 +104,11 @@ form {
 }
 /* Additional styles for the Product Manager application */
 #add_product_form {
-    margin: .5em 0;
+     margin: .9em 0 1em;
+    padding-top: 2px;
+    position: absolute;
+    vertical-align:middle;
+    text-align: center;
 }
 #add_product_form label {
     width: 6em;
@@ -261,4 +265,5 @@ form {
   textarea {
     resize: none;
   }
+  
   
