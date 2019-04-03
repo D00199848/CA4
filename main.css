@@ -104,7 +104,11 @@ form {
 }
 /* Additional styles for the Product Manager application */
 #add_product_form {
-    margin: .5em 0;
+     margin: .9em 0 1em;
+    padding-top: 2px;
+    position: absolute;
+    vertical-align:middle;
+    text-align: center;
 }
 #add_product_form label {
     width: 6em;
@@ -120,7 +124,6 @@ form {
 }
 
 
-//nav bar
   body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: blue;
@@ -261,4 +264,50 @@ form {
   textarea {
     resize: none;
   }
-  
+ 
+  /********************************************************************
+*jQuery
+********************************************************************/
+
+.container{
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 40px;
+background: white;
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input{
+padding: 4px 15px 4px 5px;
+color: teal;
+}
+
+#button{
+display: inline-block;
+background-color:teal;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 4px 25px;
+}
+
+#button:hover{
+cursor: pointer;
+}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+ol li:nth-child(even){background: #dfdfdf;}
+
+.strike{text-decoration: line-through;}
+
+li:hover{
+  cursor: pointer;
+ }
