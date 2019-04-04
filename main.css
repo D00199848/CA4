@@ -124,7 +124,6 @@ form {
 }
 
 
-//nav bar
   body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: blue;
@@ -311,4 +310,5 @@ ol li:nth-child(even){background: #dfdfdf;}
 
 li:hover{
   cursor: pointer;
+ }
  }
