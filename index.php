@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Shield - Bootstrap Agency Template</title>
+  <title>TicketDirect</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -51,7 +51,6 @@
             <li> <a href="#services" class="smoothscroll"> Services</a></li>
             <li> <a href="#team" class="smoothscroll"> Team</a></li>
             <li> <a href="#portfolio" class="smoothscroll"> Portfolio</a></li>
-            <li> <a href="#blog" class="smoothscroll"> Blog</a></li>
             <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
              <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </div>
@@ -65,8 +64,7 @@
   <div id="headerwrap" name="home">
     <header class="clearfix">
       <h1><span class="icon icon-ticket"></span></h1>
-      <p>A Bootstrap One Page Template</p>
-      <p>Exclusive for TemplateMag</p>
+      <p>United We Party</p>
     </header>
   </div>
   <!-- /headerwrap -->
@@ -74,24 +72,11 @@
   <!-- ==== GREYWRAP ==== -->
   <div id="greywrap">
     <div class="row">
-      <div class="col-lg-4 callout">
-        <span class="icon icon-stack"></span>
-        <h2>Bootstrap 3</h2>
-        <p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
-      </div>
-      <!-- col-lg-4 -->
-
-      <div class="col-lg-4 callout">
-        <span class="icon icon-eye"></span>
-        <h2>Retina Ready</h2>
-        <p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
-      </div>
-      <!-- col-lg-4 -->
-
+      
       <div class="col-lg-4 callout">
         <span class="icon icon-heart"></span>
         <h2>Crafted with Love</h2>
-        <p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love. </p>
+        <p>We make sure to provide you with the best tickets out there. That is our most valued secret. We only do thing that we love. </p>
       </div>
       <!-- col-lg-4 -->
     </div>
@@ -103,13 +88,11 @@
   <div class="container" id="about" name="about">
     <div class="row white">
       <br>
-      <h1 class="centered">A LITTLE ABOUT OUR AGENCY</h1>
+      <h1 class="centered">A LITTLE ABOUT US</h1>
       <hr>
 
       <div class="col-lg-6">
-        <p>We believe ideas come from everyone, everywhere. In fact, at TemplateMag, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft.
-          These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what
-          we can to support the community we love.</p>
+          <center><p>We believe that if you want to be good at something you got to love doing it, this is why when you receive a ticket from us you also receive some of our love and passion. At TicketDirect we make sure that you get the best experience not only on our website but also at the concert/festival. We are here to create the best memories of your life.</p></center>
       </div>
       <!-- col-lg-6 -->
 
@@ -127,9 +110,9 @@
   <!-- ==== SECTION DIVIDER1 -->
   <section class="section-divider textdivider divider1">
     <div class="container">
-      <h1>DESIGN EXPAND BOUNDARIES</h1>
+      <h1>EXPERIENCE LIKE NO OTHER</h1>
       <hr>
-      <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
+      <p>Not only our website is easy to use, but it will also do exactly what you want it to do. We provide tickets for hundreds of events around the globe.</p>
     </div>
     <!-- container -->
   </section>
@@ -141,27 +124,23 @@
     <br>
     <br>
     <div class="row">
-      <h2 class="centered">ONE BRAND, ONE VOICE.</h2>
+      <h2 class="centered">BE THE VIP THERE</h2>
       <hr>
       <br>
       <div class="col-lg-offset-2 col-lg-8">
-        <p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t
-          credible aren’t viable.
+        <center><p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. These two halves know exactly what would make a festival complete, this is why we give you the chance of getting yourself one of the golden tickets. With it, not only you've access to all areas but you also have the chance to get talking to the musicians and artists face to face!
         </p>
         <p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
         <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s
-          when the brand can truly flex its muscles.</p>
+            when the brand can truly flex its muscles.</p></center>
       </div>
       <!-- col-lg -->
     </div>
     <!-- row -->
 
     <div class="row">
-      <h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
-      <hr>
-      <br>
       <div class="col-lg-offset-2 col-lg-8">
-        <img class="img-responsive" src="img/iphone.png" alt="">
+        <img class="img-responsive" src="img/goldenticket.png" alt="">
       </div>
       <!-- col -->
     </div>
@@ -173,9 +152,10 @@
   <!-- ==== SECTION DIVIDER2 -->
   <section class="section-divider textdivider divider2">
     <div class="container">
-      <h1>DESIGN IS AN INTERACTION</h1>
+      <h1>MEET NEW PEOPLE</h1>
       <hr>
-      <p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
+      <br><br>
+      <p>Wait until you see how easy it is to make new friends at our festivals!</p>
     </div>
     <!-- container -->
   </section>
@@ -242,13 +222,10 @@
   <div id="greywrap">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 centered">
-          <img class="img-responsive" src="img/macbook.png" align="">
-        </div>
         <div class="col-lg-4">
           <h2>We Are Hiring!</h2>
-          <p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.</p>
-          <p><a class="btn btn-success">Contact Us</a></p>
+          <p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites. If you're interested please don't be afraid to contact us below and tell us why you would like to work with us.</p>
+
         </div>
       </div>
       <!-- row -->
@@ -429,73 +406,6 @@
       <h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
       <hr>
       <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>
-    </div>
-    <!-- container -->
-  </section>
-  <!-- section -->
-
-  <!-- ==== BLOG ==== -->
-  <div class="container" id="blog" name="blog">
-    <br>
-    <div class="row">
-      <br>
-      <h1 class="centered">WE ARE STORYTELLERS</h1>
-      <hr>
-      <br>
-      <br>
-    </div>
-    <!-- /row -->
-
-    <div class="row">
-      <div class="col-lg-6 blog-bg">
-        <div class="col-lg-4 centered">
-          <br>
-          <p><img class="img img-circle" src="img/team/team04.jpg" width="60px" height="60px"></p>
-          <h4>Jaye Smith</h4>
-          <h5>Published Aug 30.</h5>
-        </div>
-        <div class="col-lg-8 blog-content">
-          <h2>We Define Success</h2>
-          <p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
-          <p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
-          <p><a href="#" class="icon icon-link"> Read More</a></p>
-          <br>
-        </div>
-      </div>
-      <!-- /col -->
-
-      <div class="col-lg-6 blog-bg">
-        <div class="col-lg-4 centered">
-          <br>
-          <p><img class="img img-circle" src="img/team/team03.jpg" width="60px" height="60px"></p>
-          <h4>Michele Lampa</h4>
-          <h5>Published Aug 28.</h5>
-        </div>
-        <div class="col-lg-8 blog-content">
-          <h2>A Beautiful Story</h2>
-          <p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
-          <p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
-          <p><a href="#" class="icon icon-link"> Read More</a></p>
-          <br>
-        </div>
-      </div>
-      <!-- /col -->
-    </div>
-    <!-- /row -->
-    <br>
-    <br>
-  </div>
-  <!-- /container -->
-
-
-  <!-- ==== SECTION DIVIDER6 ==== -->
-  <section class="section-divider textdivider divider6">
-    <div class="container">
-      <h1>CRAFTED IN NEW YORK, USA.</h1>
-      <hr>
-      <p>Some Address 987,</p>
-      <p>+34 9884 4893</p>
-      <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
     </div>
     <!-- container -->
   </section>

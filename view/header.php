@@ -16,7 +16,6 @@
    </div> 
     </nav>
 
-            <a href="login.php">Log In</a>
     <title>Tickets Direct</title>
     <link href="./main.css" rel="stylesheet" type="text/css"/>
 </head>
