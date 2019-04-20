@@ -143,6 +143,71 @@ require_once('../model/database_1.php');
 
 </div>
 
+<!--<div class="container2">
+     
+       <div id="load-products"></div>  products will be load here 
+    
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/swal2/sweetalert2.min.js"></script>
+
+
+<script>
+ $(document).ready(function(){
+  
+  readProducts(); /* it will load products when document loads */
+  
+  $(document).on('click', '#delete_band', function(e){
+   
+   var bandId = $(this).data('id');
+   SwalDelete(bandId);
+   e.preventDefault();
+  });
+  
+ });
+ 
+ function SwalDelete(bandId){
+  
+  swal({
+   title: 'Are you sure?',
+   text: "You won't be able to revert this!",
+   type: 'warning',
+   showCancelButton: true,
+   confirmButtonColor: '#3085d6',
+   cancelButtonColor: '#d33',
+   confirmButtonText: 'Yes, delete it!',
+   showLoaderOnConfirm: true,
+     
+   preConfirm: function() {
+     return new Promise(function(resolve) {
+          
+        $.ajax({
+        url: 'delete.php',
+        type: 'POST',
+           data: 'delete='+bandId,
+           dataType: 'json'
+        })
+        .done(function(response){
+         swal('Deleted!', response.message, response.status);
+     readProducts();
+        })
+        .fail(function(){
+         swal('Oops...', 'Something went wrong with ajax !', 'error');
+        });
+     });
+      },
+   allowOutsideClick: false     
+  }); 
+  
+ }
+ 
+ function readProducts(){
+  $('#load-products').load('read.php'); 
+ }
+ 
+</script>-->
+
 <?php
 include('../view/footer.php');
 ?>

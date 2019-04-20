@@ -19,6 +19,7 @@
             <a href="login.php">Log In</a>
     <title>Tickets Direct</title>
     <link href="./main.css" rel="stylesheet" type="text/css"/>
+    <script src="https://www.phpkobo.com/mod/ALNJX/v2.09/demoex/cn/ajax-likes.php?tpl=tpl-2&iid=demo-002"></script>
 </head>
 
 <!-- the body section -->
