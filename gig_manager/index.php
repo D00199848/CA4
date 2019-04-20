@@ -208,6 +208,56 @@ require_once('../model/database_1.php');
  
 </script>-->
 
+<!-- Text input to enter the employee's name -->
+    <input type="text" id="gig_name"><br>
+    <!-- Our search button -->
+    <input type="button" id="search_button" value="Search">
+    <!-- This div will contain a list of all employee names that match our search term -->
+    <div id="search_results" style="padding:5px;"></div>
+ 
+<!-- JQuery library -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    //Add a JQuery click listener to our search button.
+    $('#search_button').click(function(){
+        //If the search button is clicked,
+        //get the employee name that is being search for
+        //from the search_box.
+        var employee_name = $('#gig_name').val().trim();
+ 
+        //Carry out a GET Ajax request using JQuery
+        $.ajax({
+            //The URL of the PHP file that searches MySQL.
+            url: 'search.php',
+            data: {
+                name: employee_name
+            },
+            success: function(returnData){
+                //Set the inner HTML of our search_results div to blank to
+                //remove any previous search results.
+                $('#search_results').html('');
+                //Parse the JSON that we got back from search.php
+                var results = JSON.parse(returnData);
+                //Loop through our employee array and append their
+                //names to our search results div.
+                $.each(results, function(key, value){
+                    //The name of the employee will be present
+                    //in the "name" property.
+                    $('#search_results').append(value.name + '<br>');
+                });
+                //If no employees match the name that was searched for, display a
+                //message saying that no results were found.
+                if(results.length == 0){
+                    $('#search_results').html('No gigs with that name were found!');
+                }
+            }
+        });
+    });
+</script>
+
+
+
+
 <?php
 include('../view/footer.php');
 ?>
