@@ -252,7 +252,7 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-  background: url(../img/header_bg.jpg) no-repeat center top;
+  background: url(../img/festival.jpg) no-repeat center top;
   margin-top: -50px;
   padding-top: 120px;
   text-align: center;
@@ -400,9 +400,6 @@ a:before, a:after {
   background-image: url('../img/bg/divider4.jpg')
 }
 
-.divider6 {
-  background-image: url('../img/bg/divider6.jpg')
-}
 
 /* ==========================================================================
    Services Section

@@ -3,6 +3,8 @@
 <link href="../main.css" rel="stylesheet" type="text/css"/>
 
 
+
+
 <?php
 require('../model/database.php');
 require('../model/gig_db.php');
@@ -116,3 +118,30 @@ if ($action == 'list_gigs') {
     header('Location: .?action=list_bands');      // display the Category List page
 }
 ?>
+<div class="container">
+    <center><h2>Hottest Tickets!</h2></center>
+
+    <center><form name="toDoList">
+            <input type="text" name="ListItem"/>
+        </form>
+
+        <div id="button">Add</div>
+        <br/>
+        <ol></ol></center>
+
+</div>
+
+<div class="dropdown" style="float: right">
+  
+  <div class="dropdown-content">
+    <a href="../reset-password.php" class="btn btn-warning">Reset Password</a>
+    <a href="../logout.php" class="btn btn-danger">Sign Out</a>
+  </div>
+</div>
+
+
+
+<!-- JQuery library -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<?php include '../view/footer.php'; ?>
