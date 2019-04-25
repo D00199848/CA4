@@ -1,6 +1,7 @@
 <img src="../images/tickets2.png" alt=""/>
 
 <link href="../main.css" rel="stylesheet" type="text/css"/>
+<link href="../jquery.css" rel="stylesheet" type="text/css"/>
 
 
 <?php
@@ -115,6 +116,7 @@ if ($action == 'list_gigs') {
     delete_band($band_id);
     header('Location: .?action=list_bands');      // display the Category List page
 }
+
 ?>
 
 <?php
@@ -130,132 +132,37 @@ require_once('../model/database_1.php');
   </div>
 </div>
 
-<div class="container">
-    <center><h2>Hottest Tickets!</h2></center>
 
-    <center><form name="toDoList">
-            <input type="text" name="ListItem"/>
-        </form>
 
-        <div id="button">Add</div>
-        <br/>
-        <ol></ol></center>
 
-</div>
+  <meta charset="UTF-8">
+  <title>Simple JQuery To Do List</title>
+  
+  
+  <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 
-<!--<div class="container2">
-     
-       <div id="load-products"></div>  products will be load here 
+    <div class="container">
+		<h2>Simple To Do List</h2>
+    <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
+       
+		<form name="toDoList">
+			<input type="text" name="ListItem"/>
+		</form>
+    
+		<div id="button">Add</div>
+		<br/>
+		<ol></ol>
+      
+      
     
     </div>
+	</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="assets/swal2/sweetalert2.min.js"></script>
-
-
-<script>
- $(document).ready(function(){
   
-  readProducts(); /* it will load products when document loads */
-  
-  $(document).on('click', '#delete_band', function(e){
-   
-   var bandId = $(this).data('id');
-   SwalDelete(bandId);
-   e.preventDefault();
-  });
-  
- });
- 
- function SwalDelete(bandId){
-  
-  swal({
-   title: 'Are you sure?',
-   text: "You won't be able to revert this!",
-   type: 'warning',
-   showCancelButton: true,
-   confirmButtonColor: '#3085d6',
-   cancelButtonColor: '#d33',
-   confirmButtonText: 'Yes, delete it!',
-   showLoaderOnConfirm: true,
-     
-   preConfirm: function() {
-     return new Promise(function(resolve) {
-          
-        $.ajax({
-        url: 'delete.php',
-        type: 'POST',
-           data: 'delete='+bandId,
-           dataType: 'json'
-        })
-        .done(function(response){
-         swal('Deleted!', response.message, response.status);
-     readProducts();
-        })
-        .fail(function(){
-         swal('Oops...', 'Something went wrong with ajax !', 'error');
-        });
-     });
-      },
-   allowOutsideClick: false     
-  }); 
-  
- }
- 
- function readProducts(){
-  $('#load-products').load('read.php'); 
- }
- 
-</script>-->
 
-<!-- Text input to enter the employee's name -->
-    <input type="text" id="gig_name"><br>
-    <!-- Our search button -->
-    <input type="button" id="search_button" value="Search">
-    <!-- This div will contain a list of all employee names that match our search term -->
-    <div id="search_results" style="padding:5px;"></div>
- 
-<!-- JQuery library -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
-    //Add a JQuery click listener to our search button.
-    $('#search_button').click(function(){
-        //If the search button is clicked,
-        //get the employee name that is being search for
-        //from the search_box.
-        var employee_name = $('#gig_name').val().trim();
- 
-        //Carry out a GET Ajax request using JQuery
-        $.ajax({
-            //The URL of the PHP file that searches MySQL.
-            url: 'search.php',
-            data: {
-                name: employee_name
-            },
-            success: function(returnData){
-                //Set the inner HTML of our search_results div to blank to
-                //remove any previous search results.
-                $('#search_results').html('');
-                //Parse the JSON that we got back from search.php
-                var results = JSON.parse(returnData);
-                //Loop through our employee array and append their
-                //names to our search results div.
-                $.each(results, function(key, value){
-                    //The name of the employee will be present
-                    //in the "name" property.
-                    $('#search_results').append(value.name + '<br>');
-                });
-                //If no employees match the name that was searched for, display a
-                //message saying that no results were found.
-                if(results.length == 0){
-                    $('#search_results').html('No gigs with that name were found!');
-                }
-            }
-        });
-    });
-</script>
-
-
+    <script  src="js/js.js"></script>
 
 
 <?php

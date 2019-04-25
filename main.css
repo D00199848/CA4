@@ -78,9 +78,7 @@ td, th {
     padding: .2em .5em .2em .5em;
     text-align: left;
 }
-form {
 
-}
 /* the styles for classes */
 .right {
     text-align: right;
@@ -134,9 +132,9 @@ form {
     font-size: 20px;
     color: #111;
   }
-  .container {
-    padding: 80px 120px;
-  }
+/*  .container {
+    padding: 80px 120px;*/
+/*  }*/
   .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -265,10 +263,7 @@ form {
     resize: none;
   }
  
-  /********************************************************************
-*jQuery
-********************************************************************/
-
+  
 .container{
 padding: 20px;
 width: 300px;
@@ -283,17 +278,17 @@ display: inline-block;
 
 input{
 padding: 4px 15px 4px 5px;
-color: teal;
+color: purple;
 }
 
 #button{
 display: inline-block;
-background-color:teal;
+background-color:purple;
 color:#ffffff;
 border-radius: 5px;
 text-align:center;
 margin-top:2px;
-padding: 4px 25px;
+padding: 4px 15px;
 }
 
 #button:hover{
@@ -311,4 +306,3 @@ ol li:nth-child(even){background: #dfdfdf;}
 li:hover{
   cursor: pointer;
  }
- 
