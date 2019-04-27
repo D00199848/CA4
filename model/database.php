@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=wp_ca3_Long_Grainne';
+    $dsn = 'mysql:host=localhost;dbname=wp_ca3_long_grainne';
     $username = 'root';
     $password = '';
 

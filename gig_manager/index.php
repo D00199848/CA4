@@ -1,6 +1,7 @@
 <img src="../images/tickets2.png" alt=""/>
 
 <link href="../main.css" rel="stylesheet" type="text/css"/>
+<link href="../jquery.css" rel="stylesheet" type="text/css"/>
 
 
 <?php
@@ -115,4 +116,36 @@ if ($action == 'list_gigs') {
     delete_band($band_id);
     header('Location: .?action=list_bands');      // display the Category List page
 }
+
+?>
+
+<?php
+require_once('../model/database_1.php');
+?>
+
+
+<div class="dropdown" style="float: right">
+  
+  <div class="dropdown-content">
+    <a href="../reset-password.php" class="btn btn-warning">Reset Password</a>
+    <a href="../logout.php" class="btn btn-danger">Sign Out</a>
+  </div>
+</div>
+
+
+
+    <form>
+        <label>Enter a new bands:</label>
+        <input class="input" type="text">
+        <input type="submit" value="Add">
+    </form>
+   
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <script src="scripts.js"></script>
+   
+    <script src="../js/js.js" type="text/javascript"></script>
+
+<?php
+include('../view/footer.php');
 ?>
