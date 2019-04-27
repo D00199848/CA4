@@ -1,26 +1,15 @@
-$(document).ready(
-    function(){
-        $('#button').click(
-            function(){
-                var toAdd = $('input[name=ListItem]').val();
-                 $('ol').append('<li>' + toAdd + '</li>');
+$(document).ready(function($) {
+    $('form').submit(function() {
+        if ($('.input').val() !== '') {
+            var newTask = $('.input').val();
+            var newLi = $('<li>' + newTask + '</li>');
+            newLi.on('click', function() {
+                $(this).remove(); // Attach the event handler *before* adding the element
             });
-       
-       $("input[name=ListItem]").keyup(function(event){
-          if(event.keyCode === 13){
-            $("#button").click();
-          }         
-      });
-      
-      $(document).on('dblclick','li', function(){
-        $(this).toggleClass('strike').fadeOut('slow');    
-      });
-      
-      $('input').focus(function() {
-        $(this).val('');
-      });
-      
-      $('ol').sortable();  
-      
-    }
-);
+            $('ul').prepend(newLi); // To put the new task at the top of the list
+            $('.input').val('');
+            return false; // So the change persists
+        }
+    });
+    $('ul').sortable(); // Because what good is a to-do list that you can't sort? :)
+});

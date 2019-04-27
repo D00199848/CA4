@@ -134,36 +134,17 @@ require_once('../model/database_1.php');
 
 
 
-
-  <meta charset="UTF-8">
-  <title>Simple JQuery To Do List</title>
-  
-  
-  <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-
-    <div class="container">
-		<h2>Simple To Do List</h2>
-    <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
-       
-		<form name="toDoList">
-			<input type="text" name="ListItem"/>
-		</form>
-    
-		<div id="button">Add</div>
-		<br/>
-		<ol></ol>
-      
-      
-    
-    </div>
-	</body>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-
-  
-
-    <script  src="js/js.js"></script>
-
+    <form>
+        <label>Enter a new bands:</label>
+        <input class="input" type="text">
+        <input type="submit" value="Add">
+    </form>
+   
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <script src="scripts.js"></script>
+   
+    <script src="../js/js.js" type="text/javascript"></script>
 
 <?php
 include('../view/footer.php');
